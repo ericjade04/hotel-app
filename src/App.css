@@ -1,1 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+* {
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Homepage (main)*/
+
+.home-main {
+  background-image: url("./assets/images/hotel-background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.212);
+
+  height: 100vh;
+  text-align: center;
+  padding: 1rem;
+
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.home-main section button {
+  padding: 1rem;
+  width: 200px;
+  margin-top: 1rem;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  color: white;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+}
+
+.home-main section button:hover {
+  cursor: pointer;
+  background-color: rgb(250, 175, 35);
+}
+
+@media screen and (min-width: 640px) {
+  .home-main section {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .home-main section button {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home-main section {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+  .home-main section p{
+    font-size: 1.2rem;
+  }
+
+  .home-main section button {
+    width: 700px;
+  }
+}
