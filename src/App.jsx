@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Home from "./pages/Home"
+import About from "./pages/About"
 import { Route, BrowserRouter, Routes, Link } from "react-router-dom"
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/hotel-app/' element={<Home />}/>
+          <Route path='/hotel-app/about' element={<About />}/>
         </Routes>
       </BrowserRouter>
     </>

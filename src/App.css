@@ -7,8 +7,13 @@
 }
 
 body {
-  background-color: white;
+  background-color: #fff2d9;
   font-family: 'Roboto', sans-serif;
+}
+
+.link-route {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Homepage (main)*/
@@ -76,5 +81,96 @@ body {
 
   .home-main section button {
     width: 700px;
+  }
+}
+
+
+/* Aboutpage (main)*/
+
+.about-article figure {
+  width: 100vw;
+  height: 250px;
+}
+
+.about-article figure img{
+  width: 100%;
+  height: 100%;
+}
+
+.about-mission {
+  padding: 1.5rem;
+}
+
+.about-mission header {
+  margin-bottom: 1rem;
+}
+
+.about-mission p {
+  text-align: justify;
+}
+
+
+.about-mission div {
+  background-color: rgb(255, 204, 141);
+  border-radius: 5px;
+
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.about-mission div button {
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  margin-top: 1rem;
+
+  padding: 0.5rem;
+}
+
+.about-mission div button:hover {
+  cursor: pointer;
+  background-color: rgb(46, 46, 46);
+}
+
+
+@media screen and (min-width: 640px) {
+  .about-article figure {
+    width: 100vw;
+    height: 450px;
+  }
+
+  .about-mission div {
+    padding: 2rem;
+  }
+
+  .about-mission div button {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-mission {
+    padding: 4rem;
+  }
+
+  .about-mission h1 {
+    font-size: 2rem;
+  }
+
+  .about-mission p {
+    font-size: 1.2rem;
+  }
+
+  .about-mission div button {
+    padding: 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-height: 1024px) {
+  .about-article {
+    height: 100vh;
   }
 }
