@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/styles/NavBar.css";
 import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.svg";
 
 
 
@@ -8,10 +9,12 @@ const NavBar = () => {
   return (
     <header className="NavBar">
       <nav>
-        <h1><Link to={"/hotel-app/"} className="link-route">#LUXESTAY</Link></h1>
+        <div>
+          <Link to={"/hotel-app/"}><img src={logo} alt="Logo" /></Link>
+        </div>
         <ul>
-          <li><Link to="/hotel-app/about"className="link-route">About</Link></li>
-          <li>Hotel</li>
+          <li><Link to="/hotel-app/about" className="link-route">About</Link></li>
+          <li><Link to="/hotel-app/hotel" className="link-route">Hotel</Link></li>
         </ul>
       </nav>
     </header>

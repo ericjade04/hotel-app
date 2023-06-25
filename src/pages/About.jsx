@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import aboutImage from "../assets/images/about-image.jpg";
+import { Link } from "react-router-dom";
 
 
 const About = () => {
@@ -26,7 +27,7 @@ const About = () => {
             </p>
             <div>
               <h1>Unveil Your Dream Destination. Embrace Exquisite Hospitality.</h1>
-              <button>Explore our hotel</button>
+              <Link to="/hotel-app/hotel"><button>Explore our hotel</button></Link>
             </div>
           </section>
         </article>
